@@ -1,0 +1,477 @@
+/* --------------------
+Template : Portfolio-01 ()
+Author : jbren_dev (Jeremy Brensinger)
+Date Created : November 14th, 2020
+-------------------- */
+
+/* --------------------
+Table of Contents :
+01) Global Styles
+02) Custom Styles
+03) Header Styles
+04) Hero / Landing Section Styles
+05) About Section Styles
+06) Services Section Styles
+07) Work Showcase Section Styles
+08) Testimonials / Clients Section Styles
+09) Contact Section Styles
+10) Footer Styles
+11) Mobile / Responsive Styles
+-------------------- */
+
+:root {
+    --white: #F8F9FA;
+    --red: #FC6871;
+    --dark-red: #DF5962;
+    --darker-red: #c34f57;
+    --black: #343A40;
+}
+
+/* --------------------
+01) Global Styles :
+Styles for global elements.
+-------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1,
+h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 15px;
+}
+
+.highlight {
+	display: inline-block;
+    padding: 0 25px 0 5px;
+    position: relative;
+    background-image: url(../imgs/backgrounds/bar.png);
+    background-position: 20px 95%;
+    background-repeat: no-repeat;
+    background-size: 85% 35%;
+}
+
+.highlight:nth-child(1) {
+    padding: 0 10px 0 5px;
+}
+
+#contact-btn {
+    margin-right: 5px;
+}
+
+.btn.btn-primary {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--dark-red);
+    border-color: var(--dark-red);
+}
+
+.btn.btn-primary:focus {
+    background-color: var(--red) !important;
+}
+
+.btn.btn-outline-primary {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.btn.btn.btn-outline-primary:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.page-section {
+    position: relative;
+}
+
+.content-container {
+    padding: 100px 0;
+}
+
+/* --------------------
+02) Custom Styles :
+Styles for custom bootstrap elements.
+-------------------- */
+
+.custom-container {
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+/* --------------------
+03) Header Styles :
+Styles for the page header.
+-------------------- */
+
+.navbar {
+    padding: 20px 0;
+    background-color: none;
+    -webkit-transition: background-color .15s ease-in-out,
+        padding .15s ease-in-out;
+    -moz-transition: background-color .15s ease-in-out,
+        padding .15s ease-in-out;
+    -o-transition: background-color .15s ease-in-out,
+        padding .15s ease-in-out;
+    transition: background-color .15s ease-in-out,
+        padding .15s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: var(--black);
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none !important;
+}
+
+.navbar-nav li a {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.navbar-nav li.active a,
+.navbar-nav li a:hover {
+    color: var(--red) !important;
+}
+
+/* --------------------
+04) Hero / Landing Section Styles :
+Styles for the hero / landing section.
+-------------------- */
+
+#hero-img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: var(--red);
+}
+
+#hero-img-cover {
+    opacity: .4;
+    z-index: 2;
+    background-color: var(--black);
+}
+
+#hero-img-img {
+    z-index: 1;
+    background-image: url(../imgs/backgrounds/stock-business.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero-img-cover,
+#hero-img-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+#hero-landing {
+    height: 100vh;
+}
+
+#hero-landing .custom-container {
+    height: 100%;
+}
+
+/* --------------------
+05) About Section Styles :
+Styles for the about section.
+-------------------- */
+
+#about-img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: var(--red);
+}
+
+#about-img-cover {
+    opacity: .4;
+    z-index: 2;
+    background-color: var(--black);
+}
+
+#about-img-img {
+    z-index: 1;
+    background-image: url(../imgs/backgrounds/stock-business-3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about-img-cover,
+#about-img-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------
+06) Services Section Styles :
+Styles for the service section.
+-------------------- */
+
+#services-container {
+    padding: 0 15px;
+}
+
+.service-col-item {
+    text-align: center;
+    padding: 50px 15px;
+}
+
+#service-row .col-md:nth-child(odd) {
+    background-color: var(--red);
+}
+
+#service-row .col-md:nth-child(even) {
+    background-color: var(--dark-red);
+}
+
+#service-row .col-md .material-icons {
+    font-size: 50px;
+}
+
+/* --------------------
+07) Work Showcase Section Styles :
+Styles for the work showcase section.
+-------------------- */
+
+.work-showcase-container {
+    position: relative;
+}
+
+.work-showcase-img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: var(--red);
+}
+
+#work-showcase-img-2 {
+    right: 0;
+}
+
+.work-showcase-img-cover {
+    opacity: .4;
+    z-index: 2;
+    background-color: var(--black);
+}
+
+.work-showcase-img-img {
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.work-showcase-img-cover,
+.work-showcase-img-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#work-showcase-container {
+    padding: 100px 30px;
+}
+
+/* --------------------
+08) Testimonials / Clients Section Styles :
+Styles for the testimonials / clients section.
+-------------------- */
+
+#testimonials-clients-container {
+    padding: 0 15px;
+}
+
+.testimonials-clients-col-item {
+    text-align: center;
+    padding: 50px 15px;
+}
+
+.client-img {
+    margin: auto;
+    margin-bottom: 15px;
+    height: 75px;
+    width: 75px;
+    background-color: var(--white);
+    border-radius: 50px;
+}
+
+#testimonials-clients-row .col-md-4:nth-child(odd) {
+    background-color: var(--red);
+}
+
+#testimonials-clients-row .col-md-4:nth-child(even) {
+    background-color: var(--dark-red);
+}
+
+.client-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#client-1 {
+    background-image: url(../imgs/clients/male-1.jpeg);
+    background-position: -25px -25px;
+    background-size: 125px 200px;
+}
+
+#client-2 {
+    background-image: url(../imgs/clients/female-1.jpeg);
+    background-position: -20px -75px;
+    background-size: 125px 200px;
+}
+
+#client-3 {
+    background-image: url(../imgs/clients/male-2.jpeg);
+    background-position: -10px -25px;
+    background-size: 125px 200px;
+}
+
+#client-4 {
+    background-image: url(../imgs/clients/female-2.jpeg);
+    background-position: -75px -110px;
+    background-size: 250px 375px;
+}
+
+#client-5 {
+    background-image: url(../imgs/clients/female-3.jpeg);
+    background-position: -70px -55px;
+    background-size: 250px 375px;
+}
+
+#client-6 {
+    background-image: url(../imgs/clients/male-3.jpeg);
+    background-position: -25px -50px;
+    background-size: 125px 200px;
+}
+
+/* --------------------
+09) Contact Section Styles:
+Styles for the contact section.
+-------------------- */
+
+#contact-form {
+    width: 100%;
+    background-color: var(--white);
+}
+
+/* --------------------
+10) Footer Styles :
+Styles for the page footer.
+-------------------- */
+
+.footer {
+    padding: 15px 10px;
+}
+
+/* --------------------
+11) Mobile / Responsive Styles :
+Styles for making the template responsive.
+-------------------- */
+
+@media only screen and (max-width: 991px) {
+    /* Header Styles */
+
+    .navbar {
+        background-color: var(--black);
+        padding: 10px 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Global Styles */
+
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+
+    .highlight {
+        padding: 0 25px 0 0;
+        background-position: 10px 95%;
+        background-size: 85% 35%;
+    }
+
+    /* Hero / Landing Section Styles */
+
+    #hero-img {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        
+    }
+
+    #hero-landing {
+        height: auto;
+        padding: 75px 0 0;
+    }
+
+    #hero-landing .custom-container {
+        height: auto;
+        padding: 100px 30px;
+    }
+    
+    #hero-landing .highlight:nth-child(1) {
+        padding: 0 10px 0 5px;
+    }
+
+    /* About Section Styles */
+
+    #about-img {
+        position: relative;
+        height: 300px;
+        width: 100%;
+    }
+
+    .about-col-content {
+        width: 100%
+    }
+
+    /* Work Showcase Section Styles */
+
+    .work-showcase-img {
+        position: relative;
+        height: 300px;
+        width: 100%;
+    }
+}
